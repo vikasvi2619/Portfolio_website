@@ -27,90 +27,133 @@
             height: 80px;
             background-color: rgb(19, 19, 62);
         }
+        body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
 
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
+h1 {
+    margin-bottom: 20px;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
+.contact {
+    margin-top: 10px;
+}
 
-        nav ul li a:hover {
-            color: rgb(98, 98, 199);
-            font-size: 1.06rem;
-        }
 
-        .left {
-            font-size: 1.5rem;
-        }
+h1, h2, h3 {
+    color: #eafa08;
+    margin-bottom: 10px;
+}
 
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 80px 0;
-        }
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
 
-        .firstsection>div {
-            width: 40%;
-        }
+.team-member {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        .leftsection {
-            font-size: 3rem;
-        }
+.team-member h3 {
+    margin-top: 0;
+}
 
-        .rightsection img {
-            width: 80%;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-        }
+ul li {
+    margin-bottom: 10px;
+}
 
-        .purple {
-            color: rgb(165, 91, 234);
-        }
+ul li:before {
+    content: "\2022";
+    margin-right: 10px;
+    color: #666;
+}
 
-        #element {
-            color: rgb(218, 241, 10);
-        }
-        .secondsection{
-            max-width: 80vw;
-            margin: auto;
-        }
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+  .Click me {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+       
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="left">Vikas's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/"><Home class="html">Home</a></li>
-                    <li><a href="/"><About class="html">About</a></li>
-                    <li><a href="/"><Contact class="html">Contact me</a></li>
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <section id="welcome">
+            <h2>Welcome to Wex</h2>
+            <p>Welcome to Wex, a passionate web developer dedicated to crafting innovative and effective digital solutions. My mission is to help businesses and individuals bring their ideas to life through cutting-edge technology and exceptional user experiences.</p>
+        </section>
+        <section id="what-I-do">
+            <h2>What I Do</h2>
+            <ul>
+                <li>Custom Web Development: My build bespoke web applications that meet the unique needs of our clients.</li>
+                <li>Responsive Design: My designs are optimized for a seamless user experience across all devices.</li>
+                <li>E-commerce Solutions: My develop e-commerce platforms that drive sales and growth for our clients.</li>
+            </ul>
+        </section>
+        <section id="get-in-touch">
+            <h2>Get in Touch</h2>
+            <p>Ready to discuss your next project? I'd love to hear from you! Contact us at <a href="mailto:kasvi46@gmail.com">kasvi46@gmail.com</a> or <a href="tel:8076830784">8076830784</a> to schedule a consultation.</p>
+        </section>
+        <section id="social-media">
+            <h2>Social Media</h2>
+            <p>Stay up-to-date with me latest news, projects, and industry insights by following me on:</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/vikas-vi-512430291/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/vikas_gautam3/" target="_blank">Instagram</a></li>
+            </ul>
 
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi, My Name is <span class="purple">Khushi</span>
-                <div>I'm Web devlope</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightsection">
-                <img src="vz.png.png" alt="">
-            </div>
+            <section id="Home">
+            <ul>
+            <button><li><a href="index.html"><Home class="html">Home</a></li></button>
+            <button><li><a href="Contact.html"><Contact class="html">Contact me</a></li></button>
+        </section>
 
+            </ul>
+        </section>
+        <script src="script.js"></script>
+    </body>
+    </html>
+                
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
