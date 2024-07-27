@@ -81,11 +81,11 @@
         }
 
         .purple {
-            color: rgb(165, 91, 234);
+            color: rgb(150, 61, 234);
         }
 
         #element {
-            color: rgb(218, 241, 10);
+            color: #ff004f;
         }
 
         .secondsection {
@@ -113,7 +113,8 @@
             background: rgb(34, 25, 84);
             padding: 40px;
             font-size: 300;
-            border-right: 10px;
+            border-radius: 10px;
+            transition: background 0.5s, transformed 0.5s;
         }
 
         .services-list div i{
@@ -132,6 +133,60 @@
         .services-list a:hover{
             color: rgb(98, 98, 199);
             font-size: 1.09rem;
+        }
+        .services-list div:hover{
+            background: #ff004f;
+            transform: translateY(-10px);
+        }
+
+        
+        #portfolio{
+            padding: 50px 0;   
+        }
+
+        .work-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+        }
+
+        .work{
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work img{
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.5s;
+        }
+        .layer h3{
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .work:hover img{
+            transform: scale(1.1);
+        }
+
+        .btn{
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid gray;
+            padding: 14px 50px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            transition: background 0.5s;
+        }
+
+        .btn:hover{
+            background: gray;
+
         }
 
     </style>
@@ -207,11 +262,41 @@
 
         </div>
     </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="imagespf-2.png.jpg">
+                    <div class="layer">
+                    <h3>Website<h3>
+                    <p>The app connects you to the talented people that help to do your work</p>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="imagespf-11.png">
+                    <div class="layer">
+                    <h3>Portfolio</h3>
+                    <p>portfolio for making person's life easier for finding job or customers</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="imagespf-3.jpg">
+                    <div class="layer">
+                    <h3>Yoga App</h3>
+                    <p>The app connects you to health, Guide you for yoga practices for your health.</p>
+                </div>
+            </div>
+
+            </div>
+            <a href="#" class="btn">More</a>
+        </div>
+    </div>
+
     
 
-        </section>
-
-     </main>
         
 
 
@@ -219,7 +304,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['<i>Web</i> Developer.',  'UI/UX Developer.', '&amp; App developer'],
+            strings: ['<i>Web</i> Developer',  'UI/UX Developer', '&amp; App developer'],
             typeSpeed: 50,
             loop: true,
         });
