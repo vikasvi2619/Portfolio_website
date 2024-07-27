@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Contact Me</title>
 	<style>
 		body {
 			background-color: rgb(0, 0, 33);
-			font-family: Arial, sans-serif;
+			font-family: 'poppins', sans-serif;
 		}
 		
-		.login-form {
+		.contact-form {
 			width: 300px;
 			background-color: #f0f0f0;
 			padding: 20px;
@@ -18,28 +18,28 @@
 			margin: 50px auto;
 		}
 		
-		.login-form label {
+		.contact-form label {
 			display: block;
 			margin-bottom: 10px;
 		}
 		
-		.login-form input[type="text"], .login-form input[type="email"], .login-form input[type="tel"] {
+		.contact-form input[type="text"], .login-form input[type="email"], .login-form input[type="tel"] {
 			width: 100%;
 			padding: 10px;
 			margin-bottom: 20px;
 			border: 1px solid #ccc;
 		}
 		
-		.login-form input[type="submit"] {
-			background-color: #b4b4b4;
-			color: #fff;
+		.contact-form input[type="submit"] {
+			background-color: #fffefe;
+			color: #000000;
 			padding: 10px 20px;
 			border: none;
 			border-radius: 10px;
 			cursor: pointer;
 		}
 		
-		.login-form input[type="submit"]:hover {
+		.contact-form input[type="submit"]:hover {
 			background-color: #ff0066;
 		}
 		.home-button {
@@ -51,7 +51,7 @@
             border: none;
             padding: 10px 20px;
             font-size: 16px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
         .home-button:hover {
             background-color: #ff0066;
@@ -59,6 +59,10 @@
         .home-button i {
             margin-right: 10px;
         }
+		.section h2{
+			font-family: 'poppins', sans-serif;
+			font-size: 2.5rem;
+		}
 	</style>
 </head>
 <body>
@@ -67,8 +71,8 @@
             <a href="index.html">
             <i class="fa-solid fa-home"></i> Home </button>
         </a>
-	<div class="login-form">
-		<h2>Login</h2>
+	    <div class="contact-form">
+		<h2>Contact Me</h2>
 		<form>
 			<label for="name">Name:</label>
 			<input type="text" id="name" name="name"><br><br>
