@@ -31,7 +31,7 @@
 		}
 		
 		.login-form input[type="submit"] {
-			background-color: #4CAF50;
+			background-color: #b4b4b4;
 			color: #fff;
 			padding: 10px 20px;
 			border: none;
@@ -40,11 +40,33 @@
 		}
 		
 		.login-form input[type="submit"]:hover {
-			background-color: #3e8e41;
+			background-color: #ff0066;
 		}
+		.home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #080808;
+            background-color: #f0ebec;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .home-button:hover {
+            background-color: #ff0066;
+        }
+        .home-button i {
+            margin-right: 10px;
+        }
 	</style>
 </head>
 <body>
+	<div class="section">
+        <button class="home-button">
+            <a href="index.html">
+            <i class="fa-solid fa-home"></i> Home </button>
+        </a>
 	<div class="login-form">
 		<h2>Login</h2>
 		<form>
@@ -62,12 +84,5 @@
 			
 			<input type="submit" value="Submit">
 		</form>
-	</div>
-    <section id="Home">
-        <ul>
-        <button><li><a href="index.html"><Home class="html">Home</a></li></button>
-        <button><li><a href="About me.html"><About class="html">About me</a></li></button>
-    </section>
-
-</body>
+		</body>
 </html>
